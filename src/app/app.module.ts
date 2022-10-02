@@ -12,6 +12,7 @@ import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usua
 import { FuncionesComponent } from './funciones/funciones.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
 import { CalendarioComponent } from './calendario/calendario.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CalendarioComponent } from './calendario/calendario.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

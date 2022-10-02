@@ -13,7 +13,7 @@ import { EspecialidadesComponent } from './especialidades/especialidades.compone
 import { CalendarioComponent } from './calendario/calendario.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfesionalesComponent } from './profesionales/profesionales.component';
-import { FormularioCitaComponent } from './formulario-cita/formulario-cita.component';
+import { CitaComponent } from './cita/cita.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { FormularioCitaComponent } from './formulario-cita/formulario-cita.compo
     EspecialidadesComponent,
     CalendarioComponent,
     ProfesionalesComponent,
-    FormularioCitaComponent
+    CitaComponent
   ],
   imports: [
     BrowserModule,

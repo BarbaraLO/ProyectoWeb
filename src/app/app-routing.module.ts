@@ -7,6 +7,7 @@ import { FuncionesComponent } from './funciones/funciones.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { ProfesionalesComponent } from './profesionales/profesionales.component';
+import { CitaComponent } from './cita/cita.component';
 
 const routes: Routes = [ 
   { path: '', component: InicioComponent },
@@ -17,6 +18,8 @@ const routes: Routes = [
   { path: 'especialidades', component: EspecialidadesComponent},
   { path: 'calendario', component: CalendarioComponent},
   { path: 'profesionales', component: ProfesionalesComponent},
+  { path: 'cita', component: CitaComponent}
+
 ];
 
 @NgModule({

@@ -4,7 +4,9 @@ section {
     margin: left;
     align-items: flex-start;
 }
-.A {
+
+a:link, a:visited,  a:hover, a:active {
+  color: aliceblue;
   text-decoration: none;
 }
 .Iniciar {

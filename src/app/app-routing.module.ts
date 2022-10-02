@@ -8,6 +8,7 @@ import { EspecialidadesComponent } from './especialidades/especialidades.compone
 import { CalendarioComponent } from './calendario/calendario.component';
 
 const routes: Routes = [ 
+  { path: '', component: InicioComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'inicio-sesion', component: InicioSesionComponent},
   { path: 'formulario-usuario', component: FormularioUsuarioComponent},

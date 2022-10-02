@@ -5,7 +5,7 @@ section {
     align-items: flex-start;
 }
 .A {
-  text-align: right;
+  text-decoration: none;
 }
 .Iniciar {
   margin: auto;
@@ -14,6 +14,7 @@ section {
   height: 39px;
   right: 200px;
   top: 100px;
+  background-color: #3C8190;
 }
 .Calendario {
   margin: auto;
@@ -22,6 +23,7 @@ section {
   height: 39px;
   right: 200px;
   top: 150px;
+  background-color: #3C8190;
 }
 .RegistrarPaciente {
   margin: auto;
@@ -30,14 +32,7 @@ section {
   height: 39px;
   right: 200px;
   top: 200px;
-}
-.RegistrarPaciente {
-  margin: auto;
-  position: absolute;
-  width: 150px;
-  height: 39px;
-  right: 200px;
-  top: 250px;
+  background-color: #3C8190;
 }
 .Reservar {
   margin: auto;
@@ -45,5 +40,6 @@ section {
   width: 150px;
   height: 39px;
   right: 200px;
-  top: 300px;
+  top: 250px;
+  background-color: #3C8190;
 }

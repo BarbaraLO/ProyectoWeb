@@ -23,6 +23,10 @@ body{
     font-size: 20px;
 }
 
+a:link, a:visited,  a:hover, a:active {
+    color: aliceblue;
+    text-decoration: none;
+}
 .content{
     color: #565656;
     padding: 2.2em;
@@ -32,18 +36,43 @@ body{
     color: #3C8190;
     text-align: center;
 }
-.btn-primary{
-    width: 100%;
-    max-width: 150px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: center;
 
-    text-align: center;
-}
-
+.Agendar {
+    margin: auto;
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    right: 200px;
+    top: 100px;
+    background-color: #3C8190;
+  }
+  .Ver {
+    margin: auto;
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    right: 200px;
+    top: 150px;
+    background-color: #3C8190;
+  }
+  .Cancelar {
+    margin: auto;
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    right: 200px;
+    top: 200px;
+    background-color: #3C8190;
+  }
+  .Detalles {
+    margin: auto;
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    right: 200px;
+    top: 250px;
+    background-color: #3C8190;
+  }
 
 
 

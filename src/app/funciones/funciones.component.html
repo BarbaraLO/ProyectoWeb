@@ -32,6 +32,28 @@
 
 <div class="botones">
     <p>
-        <button type="submit" class="btn-primary">Enviar</button>        
+        <button type="button" class="Agendar">
+        <a [routerLink]="['/inicio-sesion']" routerLink="router-link-active">Agendar cita</a>
+        </button>
     </p>
+
+    <p>
+        <button type="button" class="Ver">
+        <a [routerLink]="['/calendario']" routerLink="router-link-active">Ver citas</a>
+        </button>
+    </p>
+
+    <p>
+        <button type="button" class="Cancelar">
+        <a [routerLink]="['/formulario-usuario']" routerLink="router-link-active">Cancelar citas</a>
+        </button>
+     </p>
+
+    <p>
+        <button type="button" class="Detalles">
+        <a [routerLink]="['/formulario-usuario']" routerLink="router-link-active">Detalles consulta</a>
+        </button>
+    </p>
+
+
 </div>

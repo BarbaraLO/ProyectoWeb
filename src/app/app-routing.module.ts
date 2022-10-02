@@ -6,6 +6,7 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 const routes: Routes = [ 
   { path: 'inicio', component: InicioComponent },
   { path: 'inicio-sesion', component: InicioSesionComponent}
+  { path: 'formulario-usuario', component: FormularioUsuarioComponent},
 ];
 
 @NgModule({

@@ -1,20 +1,49 @@
 section {
     width: 10%;
     height: 30%;
-    margin-bottom:0;
+    margin: left;
+    align-items: flex-start;
 }
-p {
-    text-align: right;
-    margin-right: 3%;
+.A {
+  text-align: right;
 }
-.Iniciar{
-    background-color: #268da3;
+.Iniciar {
+  margin: auto;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 100px;
 }
-
-.Reservar{
-    background-color: #268da3;
+.Calendario {
+  margin: auto;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 150px;
 }
-
-.RegistrarPaciente{
-    background-color: #268da3;
+.RegistrarPaciente {
+  margin: auto;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 200px;
+}
+.RegistrarPaciente {
+  margin: auto;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 250px;
+}
+.Reservar {
+  margin: auto;
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  right: 200px;
+  top: 300px;
 }

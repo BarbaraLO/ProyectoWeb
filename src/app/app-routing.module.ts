@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
@@ -6,6 +6,8 @@ import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usua
 import { FuncionesComponent } from './funciones/funciones.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
 import { CalendarioComponent } from './calendario/calendario.component';
+import { ProfesionalesComponent } from './profesionales/profesionales.component';
+import { FormularioCitaComponent } from './formulario-cita/formulario-cita.component';
 
 const routes: Routes = [ 
   { path: '', component: InicioComponent },
@@ -14,7 +16,9 @@ const routes: Routes = [
   { path: 'formulario-usuario', component: FormularioUsuarioComponent},
   { path: 'funciones', component: FuncionesComponent},
   { path: 'especialidades', component: EspecialidadesComponent},
-  { path: 'calendario', component: CalendarioComponent}
+  { path: 'calendario', component: CalendarioComponent},
+  { path: 'profesionales', component: ProfesionalesComponent},
+  { path: 'formulario-cita', component: FormularioCitaComponent}
 ];
 
 @NgModule({

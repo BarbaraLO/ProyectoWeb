@@ -11,6 +11,7 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usuario.component';
 import { FuncionesComponent } from './funciones/funciones.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EspecialidadesComponent } from './especialidades/especialidades.compone
     InicioSesionComponent,
     FormularioUsuarioComponent,
     FuncionesComponent,
-    EspecialidadesComponent
+    EspecialidadesComponent,
+    CalendarioComponent
   ],
   imports: [
     BrowserModule,

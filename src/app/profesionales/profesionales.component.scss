@@ -1,7 +1,16 @@
-.imagen-responsive{
-    
+.imagen{
+    width: 100px;
+    height: 200px;
     padding-left: 30px;
 }
+
+div.imagen {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #3C8190;
+    color: #fff;
+    padding: 15px;
+  }
 
 h5{
     font-size: 15px;

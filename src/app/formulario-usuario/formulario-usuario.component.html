@@ -3,21 +3,21 @@
 </div>
 
 <div class="container py-5">
-   <form>
+   <form id = "Forma">
       <div class="mb-3">
         <label for="InputNombreUsuario" class="form-label">Nombres</label>
-        <input type="NombreUsuario" class="form-control" id="InputNombreUsuario" aria-describedby="NombreHelp">
+        <input type="NombreUsuario" class="form-control" id="InputNombreUsuario" aria-describedby="NombreHelp" placeholder="Nombres">
         <div id="NombreHelp" class="form-text"></div>
       </div>
       <div class="mb-3">
         <label for="InputApellidosUsuario" class="form-label">Apellidos</label>
-        <input type="ApellidoUsuario" class="form-control" id="InputApellidoUsuario" aria-describedby="ApellidoHelp">
+        <input type="ApellidoUsuario" class="form-control" id="InputApellidoUsuario" aria-describedby="ApellidoHelp" placeholder="Apellidos">
         <div id="ApellidoHelp" class="form-text"></div>
       </div>
       <div class="mb-3">
         <label for="InputRutUsuario" class="form-label">Rut</label>
         <input type="RutUsuario" class="form-control" id="InputRutUsuario" aria-describedby="RutHelp">
-        <div id="RutHelp" class="form-text"><!--Ej: 12345678-9--></div>
+        <div id="RutHelp" class=""><!--Ej: 12345678-9--></div>
       </div>
       <div class="mb-3">
         <label for="InputCorreoUsuario" class="form-label">Correo electrónico</label>
@@ -35,4 +35,33 @@
       </p>
 
     </form>
-  </div>  
+  </div>
+<script>
+  $(document).ready(function() {
+    $("#basic-form").validate({
+      rules: {
+        InputNombreUsuario : {
+          required: true,
+          minlength: 3
+        },
+        InputApellidosUsuario: {
+          required: true,
+          number: true,
+        },
+        InputRutUsuario: {
+          required: true,
+          minlength: 9
+        },
+        InputCorreoUsuario: {
+          required: {
+            depends: function(elem) {
+              return $("#age").val() > 50
+            }
+          },
+          number: true,
+          min: 0
+        }
+      }
+    });
+  });
+</script>

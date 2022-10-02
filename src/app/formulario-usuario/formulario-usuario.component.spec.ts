@@ -7,7 +7,7 @@ describe('FormularioUsuarioComponent', () => {
   let fixture: ComponentFixture<FormularioUsuarioComponent>;
 
   (document).ready(function() {
-    ("#basic-form").validate();
+    ("#Forma").validate();
   });
   beforeEach(async () => {
     await TestBed.configureTestingModule({

@@ -5,14 +5,18 @@
     
     <!-- Botón normal -->
     <p>
-    <button type="button" class="Iniciar">Iniciar Sesión</button>
+        <button type="button" class="Iniciar">
+           <a [routerLink]="['/inicio-sesion']" routerLink="router-link-active">Iniciar Sesión</a>
+        </button>
+        </p>
+    
+        <p>
+        <button type="button" class="Reservar">Reservar hora</button>
+        </p>
+    
+        <p>
+        <button type="button" class="RegistrarPaciente">
+        <a [routerLink]="['/formulario-usuario']" routerLink="router-link-active">Registrarse</a>
+        </button>    
     </p>
-
-    <p>
-    <button type="button" class="Reservar">Reservar hora</button>
-    </p>
-
-    <p>
-    <button type="button" class="RegistrarPaciente">Registrarse</button>
-    </p>
-
+    

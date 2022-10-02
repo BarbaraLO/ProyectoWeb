@@ -1,1 +1,37 @@
-<p>formulario-usuario works!</p>
+<div class="page-header">
+    <h3>Registrarse</h3>
+  </div>
+  
+   <form>
+      <div class="mb-3">
+        <label for="InputNombreUsuario" class="form-label">Nombres</label>
+        <input type="NombreUsuario" class="form-control" id="InputNombreUsuario" aria-describedby="NombreHelp">
+        <div id="NombreHelp" class="form-text"></div>
+      </div>
+      <div class="mb-3">
+        <label for="InputApellidosUsuario" class="form-label">Apellidos</label>
+        <input type="ApellidoUsuario" class="form-control" id="InputApellidoUsuario" aria-describedby="ApellidoHelp">
+        <div id="ApellidoHelp" class="form-text"></div>
+      </div>
+      <div class="mb-3">
+        <label for="InputRutUsuario" class="form-label">Rut</label>
+        <input type="RutUsuario" class="form-control" id="InputRutUsuario" aria-describedby="RutHelp">
+        <div id="RutHelp" class="form-text"><!--Ej: 12345678-9--></div>
+      </div>
+      <div class="mb-3">
+        <label for="InputCorreoUsuario" class="form-label">Correo electrónico</label>
+        <input type="correoUsuario" class="form-control" id="InputCorreoUsuario" aria-describedby="CorreoHelp">
+        <div id="CorreoHelp" class="form-text"><!--ejemplo@correo.com--></div>
+      </div>
+      <div class="mb-3">
+        <label for="InputTelefonoUsuario" class="form-label">Telefono</label>
+        <input type="TelefonoUsuario" class="form-control" id="InputTelefonoUsuario" aria-describedby="TelefonoHelp">
+        <div id="TelefonoHelp" class="form-text"><!--ejemplo@correo.com--></div>
+      </div>
+      <!--<div class="mb-3">
+        <label for="InputContrasenaUsuario" class="form-label">Contraseña</label>
+        <input type="contrasena" class="form-control" id="InputContrasenaUsuario">
+      </div>-->
+  
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>

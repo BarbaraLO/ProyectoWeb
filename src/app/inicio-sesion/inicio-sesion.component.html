@@ -1,13 +1,20 @@
-<form id="basic-form" action="" method="post">
-    <p>
-      <label for="name">Rut <span>(12345678-9)</span></label>
-      <input id="name" name="name" minlength="3" type="text" required>
-    </p>
-    <p>
-      <label for="email">Contraseña </label>
-      <input id="email" type="email" name="email" required>
-    </p>
-    <p>
-      <input class="submit" type="submit" value="SUBMIT">
-    </p>
+<div class="page-header">
+  <h3>Iniciar Sesion</h3>
+</div>
+
+<form>
+<div class="mb-3">
+    <label for="InputRutUsuario" class="form-label">Rut</label>
+    <input type="RutUsuario" class="form-control" id="InputRutUsuario" aria-describedby="RutHelp">
+    <div id="RutHelp" class="form-text"><!--Ej: 12345678-9--></div>
+  </div>
+
+  <div class="mb-3">
+    <label for="InputContrasenaUsuario" class="form-label">Contraseña</label>
+    <input type="ContrasenaUsuario" class="form-control" id="InputContrasenaUsuario" aria-describedby="ContrasenaHelp">
+    <div id="ContrasenaHelp" class="form-text"></div>
+  </div>
+
+
+  <button type="submit" class="btn-primary">Iniciar Sesion</button>
 </form>

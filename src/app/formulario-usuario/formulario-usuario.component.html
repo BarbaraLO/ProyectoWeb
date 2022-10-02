@@ -38,30 +38,25 @@
   </div>
 <script>
   $(document).ready(function() {
-    $("#basic-form").validate({
+    $("#Forma").validate({
       rules: {
         InputNombreUsuario : {
           required: true,
           minlength: 3
         },
         InputApellidosUsuario: {
-          required: true,
-          number: true,
+          minlength: 3
         },
         InputRutUsuario: {
           required: true,
           minlength: 9
         },
-        InputCorreoUsuario: {
-          required: {
-            depends: function(elem) {
-              return $("#age").val() > 50
-            }
-          },
-          number: true,
-          min: 0
+
+        InputRutUsuario:{
+        required : true,
         }
       }
-    });
-  });
+    }
+    )})
+
 </script>

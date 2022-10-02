@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usuario.component';
 import { FuncionesComponent } from './funciones/funciones.component';
@@ -22,7 +21,6 @@ import { FormularioCitaComponent } from './formulario-cita/formulario-cita.compo
     InicioComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
     InicioSesionComponent,
     FormularioUsuarioComponent,
     FuncionesComponent,

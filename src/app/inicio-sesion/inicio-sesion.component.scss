@@ -37,5 +37,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: blue;
+  background-color: #3C8190;
+}
+
+a:link, a:visited,  a:hover, a:active {
+  color: aliceblue;
+  text-decoration: none;
 }

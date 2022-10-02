@@ -8,6 +8,7 @@ import { EspecialidadesComponent } from './especialidades/especialidades.compone
 import { CalendarioComponent } from './calendario/calendario.component';
 import { ProfesionalesComponent } from './profesionales/profesionales.component';
 import { CitaComponent } from './cita/cita.component';
+import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.component';
 
 const routes: Routes = [ 
   { path: '', component: InicioComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'especialidades', component: EspecialidadesComponent},
   { path: 'calendario', component: CalendarioComponent},
   { path: 'profesionales', component: ProfesionalesComponent},
-  { path: 'cita', component: CitaComponent}
+  { path: 'cita', component: CitaComponent},
+  { path: 'citas-pendientes', component: CitasPendientesComponent}
 
 ];
 

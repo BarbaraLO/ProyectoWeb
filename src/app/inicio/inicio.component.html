@@ -4,19 +4,24 @@
     </section>
     
     <!-- Botón normal -->
-    <p>
-        <button type="button" class="Iniciar">
+        <p>
+           <button type="button" class="Iniciar">
            <a [routerLink]="['/inicio-sesion']" routerLink="router-link-active">Iniciar Sesión</a>
-        </button>
+           </button>
         </p>
     
         <p>
-        <button type="button" class="Reservar">Reservar hora</button>
+            <button type="button" class="Calendario">
+            <a [routerLink]="['/Calendario']" routerLink="router-link-active">Calendario</a>
+            </button>    
         </p>
-    
+        
         <p>
-        <button type="button" class="RegistrarPaciente">
-        <a [routerLink]="['/formulario-usuario']" routerLink="router-link-active">Registrarse</a>
-        </button>    
-    </p>
-    
+            <button type="button" class="RegistrarPaciente">
+            <a [routerLink]="['/formulario-usuario']" routerLink="router-link-active">Registrarse</a>
+            </button>    
+        </p>
+
+        <p>
+            <button type="button" class="Reservar">Reservar hora</button>
+        </p>

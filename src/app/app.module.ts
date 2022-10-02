@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usuario.component';
 import { FuncionesComponent } from './funciones/funciones.component';
+import { EspecialidadesComponent } from './especialidades/especialidades.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FuncionesComponent } from './funciones/funciones.component';
     HomeComponent,
     InicioSesionComponent,
     FormularioUsuarioComponent,
-    FuncionesComponent
+    FuncionesComponent,
+    EspecialidadesComponent
   ],
   imports: [
     BrowserModule,

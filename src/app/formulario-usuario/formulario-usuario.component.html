@@ -36,27 +36,27 @@
 
     </form>
   </div>
-<script>
-  $(document).ready(function() {
-    $("#Forma").validate({
-      rules: {
-        InputNombreUsuario : {
-          required: true,
-          minlength: 3
-        },
-        InputApellidosUsuario: {
-          minlength: 3
-        },
-        InputRutUsuario: {
-          required: true,
-          minlength: 9
-        },
-
-        InputRutUsuario:{
-        required : true,
+  <script>
+    $(document).ready(function() {
+      $("#Forma").validate({
+        rules: {
+          InputNombreUsuario : {
+            required: true,
+            minlength: 3
+          },
+          InputApellidosUsuario: {
+            minlength: 3
+          },
+          InputRutUsuario: {
+            required: true,
+            minlength: 9
+          },
+  
+          InputRutUsuario:{
+          required : true,
+          }
         }
       }
-    }
-    )})
+      )})
 
-</script>
+  </script>

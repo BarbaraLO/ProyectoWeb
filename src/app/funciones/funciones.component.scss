@@ -21,6 +21,7 @@ body{
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
+    width: 50%;
 }
 
 a:link, a:visited,  a:hover, a:active {
@@ -33,12 +34,14 @@ a:link, a:visited,  a:hover, a:active {
 }
 
 .botones{
+ 
     color: #3C8190;
-    text-align: center;
+    text-align: right;
+    width: 10%;
 }
 
 .Agendar {
-    margin: auto;
+    margin:auto;
     position: absolute;
     width: 150px;
     height: 39px;

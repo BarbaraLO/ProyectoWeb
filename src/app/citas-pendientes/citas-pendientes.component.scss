@@ -25,10 +25,12 @@
 .btn-primary{
   width: 100%;
   max-width: 100px;
-margin-right: 50px;
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: right;
   align-items: right;
   color: white;
+  border-radius: 10px;
+  background-color: rgb(255, 31, 31);
 }

@@ -15,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfesionalesComponent } from './profesionales/profesionales.component';
 import { CitaComponent } from './cita/cita.component';
 import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.component';
+import { FormInicioComponent } from './form-inicio/form-inicio.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.co
     CalendarioComponent,
     ProfesionalesComponent,
     CitaComponent,
-    CitasPendientesComponent
+    CitasPendientesComponent,
+    FormInicioComponent
   ],
   imports: [
     BrowserModule,

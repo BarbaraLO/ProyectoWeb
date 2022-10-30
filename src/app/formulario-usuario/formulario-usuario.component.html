@@ -5,61 +5,77 @@
 </div>
 
 <div class="container py-5">
-   <form id = "Forma">
+   <form [formGroup]="formularioRegistro" (ngSubmit)="submit()">
       <div class="mb-3">
         <label for="InputNombreUsuario" class="form-label">Nombres</label>
-        <input type="NombreUsuario" class="form-control" id="InputNombreUsuario" aria-describedby="NombreHelp" placeholder="Nombres">
-        <div id="NombreHelp" class="form-text"></div>
+        <input type="nombre"  formControlName="nombre" placeholder="Nombres" class="form-control">
+        <span *ngIf="this.formularioRegistro.get('nombre')?.errors?.['required']">
+            (El campo no puede quedar vacío)
+        </span>
+        <span *ngIf="this.formularioRegistro.get('nombre')?.errors?.['minlength']">
+            (Nombre invalido)
+        </span>
       </div>
+
       <div class="mb-3">
         <label for="InputApellidosUsuario" class="form-label">Apellidos</label>
-        <input type="ApellidoUsuario" class="form-control" id="InputApellidoUsuario" aria-describedby="ApellidoHelp" placeholder="Apellidos">
-        <div id="ApellidoHelp" class="form-text"></div>
+        <input type="apellido"  formControlName="apellido" placeholder="Apellidos" class="form-control">
+        <span *ngIf="this.formularioRegistro.get('apellido')?.errors?.['required']">
+            (El campo no puede quedar vacío)
+        </span>
+        <span *ngIf="this.formularioRegistro.get('apellido')?.errors?.['minlength']">
+            (Apellido invalido)
+        </span>
       </div>
+
       <div class="mb-3">
         <label for="InputRutUsuario" class="form-label">Rut</label>
-        <input type="RutUsuario" class="form-control" id="InputRutUsuario" aria-describedby="RutHelp" placeholder="Sin puntos ni guión Ej: 198765432">
-        <div id="RutHelp" class=""><!--Ej: 12345678-9--></div>
+        <input type="rut"  formControlName="rut" placeholder="Ej: 12345678-9" class="form-control">
+        <span *ngIf="this.formularioRegistro.get('rut')?.errors?.['required']">
+            (El campo no puede quedar vacío)
+        </span>
+        <span *ngIf="this.formularioRegistro.get('rut')?.errors?.['minlength']">
+            (Formato rut invalido)
+        </span>
       </div>
+
       <div class="mb-3">
         <label for="InputCorreoUsuario" class="form-label">Correo electrónico</label>
-        <input type="correoUsuario" class="form-control" id="InputCorreoUsuario" aria-describedby="CorreoHelp" placeholder="ejemplo@correo.com">
-        <div id="CorreoHelp" class="form-text"><!--ejemplo@correo.com--></div>
+        <input type="mail"  formControlName="mail" placeholder="ejemplo@correo.com" class="form-control">
+        <span *ngIf="this.formularioRegistro.get('mail')?.errors?.['required']">
+          (El campo no puede quedar vacío)
+        </span>
+        <span *ngIf="this.formularioRegistro.get('mail')?.errors?.['email']">
+          (Correo invalido)
+        </span>
       </div>
+
       <div class="mb-3">
         <label for="InputTelefonoUsuario" class="form-label">Telefono</label>
-        <input type="TelefonoUsuario" class="form-control" id="InputTelefonoUsuario" aria-describedby="TelefonoHelp" placeholder="+ 56 9 ...">
-        <div id="TelefonoHelp" class="form-text"></div>
+        <input type="fono"  formControlName="fono" placeholder="Ej: 12345679" class="form-control">
+        <span *ngIf="this.formularioRegistro.get('fono')?.errors?.['required']">
+          (El campo no puede quedar vacío)
+        </span>
+        <span *ngIf="this.formularioRegistro.get('fono')?.errors?.['minlength']">
+          (Formato de telefono invalido)
+        </span>
       </div>
+
+      <div class="mb-3">
+        <label for="InputClave" class="form-label">Contraseña</label>
+        <input type="password"  formControlName="password" placeholder="Contraseña" class="form-control">
+        <span *ngIf="this.formularioRegistro.get('password')?.errors?.['required']">
+          (El campo no puede quedar vacío)
+        </span>
+        <span *ngIf="this.formularioRegistro.get('password')?.errors?.['minlength']">
+          (Formato de telefono invalido)
+        </span>
+      </div>
+
       <p>
-        <button type="submit" class="btn-primary">
-          <a [routerLink]="['/funciones']" routerLink="router-link-active">Ingresar</a></button>
+        <button type="submit" [disabled]="formularioRegistro.invalid" [routerLink]="['/funciones']" routerLink="router-link-active">Ingresar</button>
       </p>
 
     </form>
   </div>
-  <script>
-    $(document).ready(function() {
-      $("#Forma").validate({
-        rules: {
-          InputNombreUsuario : {
-            required: true,
-            minlength: 3
-          },
-          InputApellidosUsuario: {
-            minlength: 3
-          },
-          InputRutUsuario: {
-            required: true,
-            minlength: 9
-          },
-
-          InputRutUsuario:{
-          required : true,
-          }
-        }
-      }
-      )})
-
-  </script>
-</div>
+ 

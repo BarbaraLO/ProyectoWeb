@@ -6,9 +6,7 @@ describe('FormularioUsuarioComponent', () => {
   let component: FormularioUsuarioComponent;
   let fixture: ComponentFixture<FormularioUsuarioComponent>;
 
-  (document).ready(function() {
-    ("#Forma").validate();
-  });
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ FormularioUsuarioComponent ]

@@ -1,7 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
-import { InicioSesionService } from 'ProyectoWeb/src/app/inicio-sesion.service';
 import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usuario.component';
 import { FuncionesComponent } from './funciones/funciones.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
@@ -15,7 +14,6 @@ import { FormularioInicioComponent } from './formulario-inicio/formulario-inicio
 const routes: Routes = [ 
   { path: '', component: InicioComponent },
   { path: 'inicio', component: InicioComponent },
-  { path: 'inicio-sesion', component: InicioSesionService},
   { path: 'formulario-usuario', component: FormularioUsuarioComponent},
   { path: 'funciones', component: FuncionesComponent},
   { path: 'especialidades', component: EspecialidadesComponent},

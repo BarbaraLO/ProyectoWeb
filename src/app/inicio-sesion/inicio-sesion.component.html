@@ -34,10 +34,11 @@
               </span>
         </div>
       
-    
         <p>
-            <button type="submit"  class="btn-btn-primary">Login</button>
+            <button type="submit" [disabled]="formularioLogin.invalid" [routerLink]="['/funciones']" routerLink="router-link-active">Ingresar</button>
         </p>
+
+
     </form>
-    
+    <div>{{resultado}}</div>
 </div>

@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { InicioSesionComponent } from 'ProyectoWeb/src/app/inicio-sesion/inicio-sesion.component';
 import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usuario.component';
 import { FuncionesComponent } from './funciones/funciones.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
@@ -17,7 +17,8 @@ import { CitaComponent } from './cita/cita.component';
 import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { FormularioInicioComponent } from './formulario-inicio/formulario-inicio.component'
 
 @NgModule({
   declarations: [
@@ -25,14 +26,14 @@ import { HttpClientModule} from '@angular/common/http'
     InicioComponent,
     HeaderComponent,
     FooterComponent,
-    InicioSesionComponent,
     FormularioUsuarioComponent,
     FuncionesComponent,
     EspecialidadesComponent,
     CalendarioComponent,
     ProfesionalesComponent,
     CitaComponent,
-    CitasPendientesComponent
+    CitasPendientesComponent,
+    FormularioInicioComponent
   ],
   imports: [
     BrowserModule,

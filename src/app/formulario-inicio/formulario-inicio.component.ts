@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-formulario',
-  templateUrl: './inicio-sesion.component.html',
-  styleUrls: ['./inicio-sesion.component.scss']
+  selector: 'app-formulario-inicio',
+  templateUrl: './formulario-inicio.component.html',
+  styleUrls: ['./formulario-inicio.component.scss']
 })
-export class FormularioComponent implements OnInit {
+export class FormularioInicioComponent implements OnInit {
   formulario:FormGroup;
   constructor(private  form:FormBuilder) {
     this.formulario=this.form.group({

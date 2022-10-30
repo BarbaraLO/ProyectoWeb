@@ -15,4 +15,4 @@ Actualmente esta en una fase temprana de desarrollo por tanto no esta alojada en
 
 Posteriormente se debe utilizar el comando npm start en una terminal interna de visual studio code para poder ejecutar el proyecto con npm start
 
-alojado en localhost/
+alojado en localhost/4700 por defecto

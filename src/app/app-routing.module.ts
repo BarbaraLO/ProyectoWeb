@@ -1,7 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
-import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { InicioSesionComponent } from 'ProyectoWeb/src/app/inicio-sesion/inicio-sesion.component';
 import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usuario.component';
 import { FuncionesComponent } from './funciones/funciones.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
@@ -9,6 +9,7 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { ProfesionalesComponent } from './profesionales/profesionales.component';
 import { CitaComponent } from './cita/cita.component';
 import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.component';
+
 
 const routes: Routes = [ 
   { path: '', component: InicioComponent },

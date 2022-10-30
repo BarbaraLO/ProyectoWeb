@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { InicioSesionComponent } from 'ProyectoWeb/src/app/inicio-sesion/inicio-sesion.component';
 import { FormularioUsuarioComponent } from './formulario-usuario/formulario-usuario.component';
 import { FuncionesComponent } from './funciones/funciones.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
@@ -15,6 +15,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfesionalesComponent } from './profesionales/profesionales.component';
 import { CitaComponent } from './cita/cita.component';
 import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

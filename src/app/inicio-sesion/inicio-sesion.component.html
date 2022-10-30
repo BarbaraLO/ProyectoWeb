@@ -1,25 +1,59 @@
-<div class="cover">
-  
-<div class="page-header">
-  <h3>Iniciar Sesion</h3>
+<form (ngSubmit)="ValidarDatos()" novalidate>
+  <div class="mb-3 row">
+
+          <label for="nombre" class="form-label">
+              Nombre
+          </label>
+  </div>
+  <div class="col-sm-10">
+           <input id="nombre" formControlName="nombre" type="text">
+
+     <div class="alert alert-danger" role="alert" *ngIf="nombre.hasError('required') && nombre.touched">El campo es obligatorio</div>
+     <div class="alert alert-danger" role="alert" *ngIf="nombre.hasError('maxlength') && nombre.touched">El campo es obligatorio</div>
+
 </div>
 
-<form>
-<div class="mb-3">
-    <label for="InputRutUsuario" class="form-label">Rut</label>
-    <input type="RutUsuario" class="form-control" id="InputRutUsuario" aria-describedby="RutHelp" placeholder="Sin puntos ni guión Ej: 198765432">
-    <div id="RutHelp" class="form-text"><!--Ej: 12345678-9--></div>
+<div class="mb-3 row">
+         <label for="apellidos" class="form-label">
+            Apellidos
+         </label>
+</div>
+<div class="col-sm-10">
+         <input id="apellidos" formControlName="apellidos" type="text" maxlength="120" class="form-control">
+        
+          <div class="alert alert-danger" role="alert"  *ngIf="apellidos.hasError('required') && apellidos.touched">El campo es obligatorio</div>
+          <div class="alert alert-danger" role="alert"  *ngIf="apellidos.hasError('maxlength') && apellidos.touched">El campo es obligatorio</div>
+      
   </div>
 
-  <div class="mb-3">
-    <label for="InputContrasenaUsuario" class="form-label">Contraseña</label>
-    <input type="ContrasenaUsuario" class="form-control" id="InputContrasenaUsuario" aria-describedby="ContrasenaHelp">
-    <div id="ContrasenaHelp" class="form-text"></div>
+  <div class="mb-3 row">
+      <label for="email" class="form-label">
+         Correo Electrónico
+      </label>
+      </div>
+      <div class="col-sm-10">
+      <input id="email" formControlName="email" type="email" maxlength="120" class="form-control">
+      
+       <div class="alert alert-danger" role="alert"  *ngIf="email.hasError('required') && email.touched">El campo es obligatorio</div>
+       <div class="alert alert-danger" role="alert"  *ngIf="email.hasError('maxlength') && email.touched">El campo es obligatorio</div>
+      
   </div>
 
-  <p>
-    <button type="submit" class="btn-primary">
-      <a [routerLink]="['/funciones']" routerLink="router-link-active">Ingresar</a></button>
-  </p>
+  <div class="mb-3 row">
+      <label for="mensaje" class="form-label">
+         Mensaje
+      </label>
+  </div>
+  <div class="col-sm-10">
+      <textarea id="mensaje" formControlName="mensaje" type="text" rows="3" class="form-control"></textarea>
+       
+       <div class="alert alert-danger" role="alert" *ngIf="mensaje.hasError('required') && mensaje.touched">El campo es obligatorio</div>
+       <div class="alert alert-danger" role="alert" *ngIf="mensaje.hasError('maxlength') && mensaje.touched">El campo es obligatorio</div>
+      
+  </div>
+
+  <div class="mb-3 row">
+         <button type="submit" [disabled]="formulario.invalid"> Iniciar Sesión</button>
+  </div>
+
 </form>
-</div>

@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { InicioSesionComponent } from './inicio-sesion.component';
+import { InicioSesionComponent } from 'ProyectoWeb/src/app/inicio-sesion/inicio-sesion.component';
 
 describe('InicioSesionComponent', () => {
   let component: InicioSesionComponent;
@@ -11,7 +10,9 @@ describe('InicioSesionComponent', () => {
       declarations: [ InicioSesionComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(InicioSesionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

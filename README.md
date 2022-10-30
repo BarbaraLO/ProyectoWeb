@@ -15,4 +15,6 @@ Actualmente esta en una fase temprana de desarrollo por tanto no esta alojada en
 
 Posteriormente se debe utilizar el comando npm start en una terminal interna de visual studio code para poder ejecutar el proyecto con npm start
 
-alojado en localhost/4700 por defecto
+alojado en localhost/4200 por defecto
+
+Se esta utilizando software de backend nest JS para la implementacion en fases tempranas de desarrollo.

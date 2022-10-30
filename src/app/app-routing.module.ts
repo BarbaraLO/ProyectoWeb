@@ -8,7 +8,8 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { ProfesionalesComponent } from './profesionales/profesionales.component';
 import { CitaComponent } from './cita/cita.component';
 import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.component';
-import { FormularioInicioComponent } from './formulario-inicio/formulario-inicio.component';
+import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+
 
 
 const routes: Routes = [ 
@@ -21,7 +22,7 @@ const routes: Routes = [
   { path: 'profesionales', component: ProfesionalesComponent},
   { path: 'cita', component: CitaComponent},
   { path: 'citas-pendientes', component: CitasPendientesComponent},
-  { path: 'formulario-inicio', component: FormularioInicioComponent}
+  { path: 'inicio-sesion', component: InicioSesionComponent}
 
 ];
 

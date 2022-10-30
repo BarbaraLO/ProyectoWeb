@@ -18,7 +18,7 @@ import { CitasPendientesComponent } from './citas-pendientes/citas-pendientes.co
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
-import { FormularioInicioComponent } from './formulario-inicio/formulario-inicio.component'
+import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { FormularioInicioComponent } from './formulario-inicio/formulario-inicio
     ProfesionalesComponent,
     CitaComponent,
     CitasPendientesComponent,
-    FormularioInicioComponent
+    InicioSesionComponent
   ],
   imports: [
     BrowserModule,

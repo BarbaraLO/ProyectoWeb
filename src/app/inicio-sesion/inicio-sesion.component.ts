@@ -2,25 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-formulario-inicio',
-  templateUrl: './formulario-inicio.component.html',
-  styleUrls: ['./formulario-inicio.component.scss']
+  selector: 'app-inicio-sesion',
+  templateUrl: './inicio-sesion.component.html',
+  styleUrls: ['./inicio-sesion.component.scss']
 })
-export class FormularioInicioComponent implements OnInit {
+export class InicioSesionComponent implements OnInit {
   formulario:FormGroup;
-  constructor(private  form:FormBuilder) {
+  constructor(private  form:FormBuilder) { 
     this.formulario=this.form.group({
       nombre:['',[Validators.required,Validators.maxLength(120)]],
       apellidos:['',Validators.required],
       email:['',[Validators.email,Validators.required]],
       mensaje:['',[Validators.required]]
-  });
+  });    
   }
 
   ngOnInit(): void {
   }
-
- 
   get nombre(): any {
     return this.formulario.get("nombre");
   }
@@ -42,5 +40,4 @@ export class FormularioInicioComponent implements OnInit {
 
 
   }
-
 }

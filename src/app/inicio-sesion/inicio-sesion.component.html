@@ -1,0 +1,43 @@
+<div class="cover">
+
+    <div class="page-header">
+        <h3>Iniciar Sesion</h3>
+    </div>
+    
+        <form (ngSubmit)="ValidarDatos()" novalidate>
+    
+    
+    
+            <div class="mb-3">
+                <label for="nombre" class="form-label"> Rut</label>
+                <input id="nombre" formControlName="nombre" type="text"  maxlength="120" class="form-control">
+                <div id="RutHelp" class="form-text"><!--Ej: 12345678-9--></div>
+                <div class="alert alert-danger" role="alert" *ngIf="nombre.hasError('required') && nombre.touched">El campo es obligatorio</div>
+                <div class="alert alert-danger" role="alert" *ngIf="nombre.hasError('maxlength') && nombre.touched">El campo es obligatorio</div>
+            </div>
+    
+      
+            <div class="mb-3">
+                <label for="apellidos" class="form-label"> Apellidos</label>
+                <input id="apellidos" formControlName="apellidos" type="text" maxlength="120" class="form-control">
+              
+                <div class="alert alert-danger" role="alert"  *ngIf="apellidos.hasError('required') && apellidos.touched">El campo es obligatorio</div>
+                <div class="alert alert-danger" role="alert"  *ngIf="apellidos.hasError('maxlength') && apellidos.touched">El campo es obligatorio</div>
+            
+            </div>
+      
+    
+      
+    
+      
+            <div class="mb-3 row">
+                <p>
+                    <button type="submit" [disabled]="formulario.invalid" [routerLink]="['/funciones']" routerLink="router-link-active"> Iniciar Sesión</button>
+    
+                </p>
+    
+            </div>
+      
+        </form>
+    
+    </div>

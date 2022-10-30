@@ -1,43 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-inicio-sesion',
   templateUrl: './inicio-sesion.component.html',
   styleUrls: ['./inicio-sesion.component.scss']
 })
-export class InicioSesionComponent implements OnInit {
-  formulario:FormGroup;
-  constructor(private  form:FormBuilder) { 
-    this.formulario=this.form.group({
-      nombre:['',[Validators.required,Validators.maxLength(120)]],
-      apellidos:['',Validators.required],
-      email:['',[Validators.email,Validators.required]],
-      mensaje:['',[Validators.required]]
-  });    
-  }
+export class InicioSesionComponent {
+  resultado!: string;
 
-  ngOnInit(): void {
-  }
-  get nombre(): any {
-    return this.formulario.get("nombre");
-  }
+  formularioLogin = new FormGroup({
+    rut: new FormControl('', [Validators.required, Validators.minLength(9), Validators.maxLength(10)]),
+    password: new FormControl('', [Validators.required, Validators.minLength(8)])
+  });
 
-  get apellidos(): any {
-    return this.formulario.get("apellidos");
-  }
-
-  get email(): any {
-    return this.formulario.get("email");
-  }
-
-  get mensaje(): any {
-    return this.formulario.get("mensaje");
-  }
-  
-
-  ValidarDatos(){
-
-
+  submit() {
+    if (this.formularioLogin.valid)
+      this.resultado = "Todos los datos son válidos";
+    else
+      this.resultado = "Hay datos inválidos en el formulario";
   }
 }

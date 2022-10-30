@@ -4,22 +4,34 @@
         <h3>Iniciar Sesion</h3>
     </div>
     
-    <form (ngSubmit)="ValidarDatos()" novalidate>
+    <form [formGroup]="formularioLogin" (ngSubmit)="submit()" >
     
         <div class="mb-3">
             <label for="nombre" class="form-label"> Rut</label>
-            <input type="rut"  name="rut" placeholder="--Ej: 12345678-9--" class="form-control">
-            <div id="RutHelp" class="form-text"><!--Ej: 12345678-9--></div>
-            <div class="alert alert-danger" role="alert" *ngIf="nombre.hasError('required') && nombre.touched">El campo es obligatorio</div>
-            <div class="alert alert-danger" role="alert" *ngIf="nombre.hasError('maxlength') && nombre.touched">El campo es obligatorio</div>
+            <input type="rut"  formControlName="rut" placeholder="Ej: 12345678-9" class="form-control">
+            <span *ngIf="this.formularioLogin.get('rut')?.errors?.['required']">
+                (El nombre no puede quedar vacío)
+            </span>
+            <span *ngIf="this.formularioLogin.get('rut')?.errors?.['minlength']">
+                (Formato invalido)
+            </span>
+            <span *ngIf="this.formularioLogin.get('rut')?.errors?.['maxlength']">
+                (Formato invalido)
+            </span>
+ 
+            
         </div>
     
       
         <div class="mb-3">
             <label for="password" class="form-label"> Contraseña </label>
-            <input type="password"  name="password" placeholder="Ingrese contraseña" class="form-control">
-            <div class="alert alert-danger" role="alert"  *ngIf="apellidos.hasError('required') && apellidos.touched">El campo es obligatorio</div>
-            <div class="alert alert-danger" role="alert"  *ngIf="apellidos.hasError('maxlength') && apellidos.touched">El campo es obligatorio</div>    
+            <input type="password"  formControlName="password" placeholder="Ingrese contraseña" class="form-control">
+            <span *ngIf="this.formularioLogin.get('password')?.errors?.['required']">
+                (El campo no puede quedar vacío)
+            </span>
+            <span *ngIf="this.formularioLogin.get('password')?.errors?.['minlength']">
+                (Debe tener como mínimo 8 caracteres)
+              </span>
         </div>
       
     
